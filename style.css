@@ -3,9 +3,59 @@
 }
 
 button {
-  padding: 0.2em;
+  padding: 0.5em;
+  cursor: pointer;
+  margin: 0.2em 0em;
+  background-color: #c4dfe5;
+  border-radius: 25%;
+  font-size: 1em;
+}
+
+li button {
+  background-color: #fcdce1;
+  padding: 0 0.1em;
+}
+
+ul {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+li {
+  cursor: pointer;
+  list-style-position: inside;
+  padding: 0;
+  border: 0.1em solid black;
+  background-color: #e9ecce;
+  margin: 0.5em 1em;
+  border-radius: 5%;
 }
 
 ion-icon {
   font-size: 18px;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: 0.5em solid #f0d9ef;
+  background-color: #ffe6bb;
+  border-radius: 5%;
+}
+
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin-bottom: 0.2em;
+}
+
+input {
+  background-color: #e9ecce;
+  padding: 0.5em;
+  font-size: 1em;
 }

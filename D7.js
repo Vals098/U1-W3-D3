@@ -2,7 +2,7 @@ const input = document.querySelector("input")
 const button = document.querySelector("button")
 const list = document.querySelector("ul")
 
-//save the value as an li
+//event by click
 button.addEventListener("click", function () {
   const value = input.value
 
@@ -15,9 +15,9 @@ button.addEventListener("click", function () {
 
   deleteButton.appendChild(icon)
 
-  deleteButton.addEventListener("click", function(){
-      li.remove()
-      })
+  deleteButton.addEventListener("click", function () {
+    li.remove()
+  })
 
   li.appendChild(deleteButton)
   list.appendChild(li)
@@ -26,7 +26,14 @@ button.addEventListener("click", function () {
   input.value = ""
 })
 
+//event by keydown !!!!!!!!!!!!!!!!!!
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    button.click()
+  }
+})
 
+//event by clicking the li
 list.addEventListener("click", function (event) {
   //mark as completed --> .add
   //unmark if clicked again --> .toggle
@@ -34,6 +41,6 @@ list.addEventListener("click", function (event) {
 })
 
 //EXTRA
-//add pointer to cursor when it hovers on a li
-//add that eventListener to trigger the button with the click on the "enter" key
+//add pointer to cursor when it hovers on a li or button // done
+//add that eventListener to trigger the button with the click on the "enter" key  // done
 //add bin icon to the deleteButton // done
