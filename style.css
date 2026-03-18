@@ -13,7 +13,7 @@ button {
 
 li button {
   background-color: #fcdce1;
-  padding: 0.3em;
+  padding: 0.2em;
   float: right;
   margin-top: 2px;
 }
@@ -26,14 +26,16 @@ ul {
 li {
   cursor: pointer;
   list-style-position: inside;
-  padding: 0.2em 1em;
+  padding: 0.1em 1em;
   margin: 0.5em 0em;
   border: 1px solid #ccc;
   background-color: #e9ecce;
   border-radius: 8px;
   list-style: none;
-  overflow: hidden;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li:hover {
